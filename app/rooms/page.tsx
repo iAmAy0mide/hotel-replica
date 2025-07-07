@@ -12,13 +12,13 @@ const rooms = [
   {
     title: "Skyline Loft",
     description: "Elegant open-plan suite with panoramic hilltop views.",
-    image: "/images/room2.jpg", // Placeholder: modern room with large windows
+    image: "/images/room33.webp", // Placeholder: modern room with large windows
     href: "/booking",
   },
   {
     title: "Heritage Room",
     description: "A touch of timeless charm, curated for deep rest.",
-    image: "/images/room3.jpg", // Placeholder: classic decor, moody lighting
+    image: "/images/room3.webp", // Placeholder: classic decor, moody lighting
     href: "/booking",
   },
 ];

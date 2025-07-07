@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow">
           {/* Replace with a warm photo: hotel owner talking with guests or sunlit lobby */}
           <Image
-            src="/images/about-story.jpg"
+            src="/images/about-story.webp"
             alt="Our Story"
             fill
             className="object-cover"

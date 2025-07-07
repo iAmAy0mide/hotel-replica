@@ -22,7 +22,7 @@ export default function StoryFunnel() {
             You booked. And when you arrived — fresh linen, herbal tea, and the stillness you didn't know you missed — you remembered how peace feels.
           </p>
           <p className=" text-primary font-semibold">
-            That’s what Serein Stay is: not a hotel — but a return.
+            That&apos;s what Serein Stay is: not a hotel — but a return.
           </p>
         </div>
       </div>

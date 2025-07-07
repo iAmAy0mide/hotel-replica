@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/fonts/NunitoSans.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @theme {
   --color-primary: #6B8E8F;           /* Tranquil Teal */
   --color-primary-hover: #557E7F;     /* Deeper Teal */
@@ -14,5 +21,8 @@
 
 body {
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "NunitoSans", sans-serif;
+  color: var(--color-base);
+  line-height: 1.6;
 }

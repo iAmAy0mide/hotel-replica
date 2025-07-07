@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import StoryFunnel from "@/components/StoryFunnel";
 import Testimonials from "@/components/Testimonials";
