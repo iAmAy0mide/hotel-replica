@@ -1,3 +1,4 @@
+import AnimatedFadeIn from "@/components/AnimatedFadeIn";
 import CTASection from "@/components/CTASection";
 import Image from "next/image";
 
@@ -5,12 +6,14 @@ export default function AboutPage() {
   return (
     <div className="bg-background text-base">
       {/* Header Block */}
-      <section className="px-6 pt-24 pb-16 text-center">
-        <h1 className="text-4xl font-heading mb-4">About Serein Stay</h1>
-        <p className="text-muted max-w-2xl mx-auto text-lg">
-          A boutique hideaway crafted for stillness, story, and the subtleties of true hospitality.
-        </p>
-      </section>
+      <AnimatedFadeIn>       
+        <section className="px-6 pt-24 pb-16 text-center">
+          <h1 className="text-4xl font-heading mb-4">About Serein Stay</h1>
+          <p className="text-muted max-w-2xl mx-auto text-lg">
+            A boutique hideaway crafted for stillness, story, and the subtleties of true hospitality.
+          </p>
+        </section>
+      </AnimatedFadeIn>
 
       {/* Image + Story */}
       <section className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-16">

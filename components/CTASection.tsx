@@ -1,5 +1,6 @@
 import Link from "next/link";
 import clsx from "clsx";
+import AnimatedFadeIn from "./AnimatedFadeIn";
 
 type Props = {
   title: string;
