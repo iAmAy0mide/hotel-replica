@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import AnimatedFadeIn from "./AnimatedFadeIn";
 import Button from "./Button";
 
@@ -27,9 +28,11 @@ export default function Hero({
           </h1>
         <p className="text-muted text-lg max-w-2xl mx-auto mb-8 text-shadow-2xs">{subtitle}</p>
         {cta && (
-          <Button className="text-lg px-8 py-4 shadow-md" onClick={cta.onClick}>
-            {cta.label}
-          </Button>
+          <Link href={"/booking"}>
+            <Button className="text-lg px-8 py-4 shadow-md" onClick={cta.onClick}>
+              {cta.label}
+            </Button>
+          </Link>
         )}
       </div>
       </AnimatedFadeIn>
