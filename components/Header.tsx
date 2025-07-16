@@ -2,25 +2,22 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Optional: use Heroicons or any icon lib
+import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathName = usePathname();
 
   const navLinks = (
     <>
-      <Link href="/" className="hover:text-base transition">
-        Home
-      </Link>
-      <Link href="/rooms" className="hover:text-base transition">
-        Rooms
-      </Link>
-      <Link href="/about" className="hover:text-base transition">
-        About
-      </Link>
-      <Link href="/contact" className="hover:text-base transition">
-        Contact
-      </Link>
+      {
+        navLinksArray.map(({name, href}) => (
+          <Link key={name} href={href} className={`hover:text-base transition ${pathName === href && "text-primary"}`}>
+            {name}
+          </Link>
+        ))
+      }
       <Link
         href="/booking"
         className="inline-block bg-primary text-white px-4 py-4 md:py-2  rounded-xl hover:bg-primary-hover transition"
@@ -65,3 +62,25 @@ export default function Header() {
     </header>
   );
 }
+
+const navLinksArray:{
+    name: string;
+    href: string;
+}[] = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Rooms",
+    href: "/rooms",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
